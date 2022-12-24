@@ -3,12 +3,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = os.getenv("API_ID", "").strip()
-API_HASH = os.getenv("API_HASH", "").strip()
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-OWNER_ID = list(map(int, os.getenv("OWNER_ID", "").split()))
-DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
-MUST_JOIN = os.getenv("MUST_JOIN", "")
+API_ID = os.getenv("API_ID", "15954332").strip()
+API_HASH = os.getenv("API_HASH", "85adea6f1eaf068b707703b4846a9ced").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "5216372825:AAFRPO7v6QTsX60wrhrIfxl3T6O5wE9EWek").strip()
+OWNER_ID = list(map(int, os.getenv("OWNER_ID", "5134595693").split()))
+DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://navindu:navi18572@cluster0.9yrur.mongodb.net/myFirstDatabase?retryWrites=true&w=majority").strip()
+MUST_JOIN = os.getenv("MUST_JOIN", "updatechanelold")
 
 if not API_ID:
     print("No API_ID found. Exiting...")
